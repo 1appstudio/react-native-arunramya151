@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* Arunramya151.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Arunramya151.m */; };
-
+		48972D9827F07AD500E65328 /* Arunramya151.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48972D9727F07AD500E65328 /* Arunramya151.swift */; };
+		48972D9A27F07B2900E65328 /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48972D9927F07B2900E65328 /* PaymentDetails.swift */; };
+		48972D9C27F07B3C00E65328 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48972D9B27F07B3C00E65328 /* LoadingOverlay.swift */; };
+		48972D9E27F07B5700E65328 /* CCWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48972D9D27F07B5700E65328 /* CCWebViewController.swift */; };
+		48972DA027F07BAE00E65328 /* RSAUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48972D9F27F07BAE00E65328 /* RSAUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +28,14 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libArunramya151.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libArunramya151.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
+		48972D9627F07AD400E65328 /* Arunramya151-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Arunramya151-Bridging-Header.h"; sourceTree = "<group>"; };
+		48972D9727F07AD500E65328 /* Arunramya151.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arunramya151.swift; sourceTree = "<group>"; };
+		48972D9927F07B2900E65328 /* PaymentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetails.swift; sourceTree = "<group>"; };
+		48972D9B27F07B3C00E65328 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		48972D9D27F07B5700E65328 /* CCWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWebViewController.swift; sourceTree = "<group>"; };
+		48972D9F27F07BAE00E65328 /* RSAUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAUtils.swift; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* Arunramya151.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arunramya151.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Arunramya151.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arunramya151.m; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,15 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
+				48972D9F27F07BAE00E65328 /* RSAUtils.swift */,
+				48972D9D27F07B5700E65328 /* CCWebViewController.swift */,
+				48972D9B27F07B3C00E65328 /* LoadingOverlay.swift */,
+				48972D9927F07B2900E65328 /* PaymentDetails.swift */,
+				48972D9727F07AD500E65328 /* Arunramya151.swift */,
 				B3E7B5881CC2AC0600A0062D /* Arunramya151.h */,
 				B3E7B5891CC2AC0600A0062D /* Arunramya151.m */,
-
 				134814211AA4EA7D00B7C361 /* Products */,
+				48972D9627F07AD400E65328 /* Arunramya151-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +103,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -119,9 +130,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				B3E7B58A1CC2AC0600A0062D /* Arunramya151.m in Sources */,
-
+				48972D9827F07AD500E65328 /* Arunramya151.swift in Sources */,
+				48972DA027F07BAE00E65328 /* RSAUtils.swift in Sources */,
+				48972D9A27F07B2900E65328 /* PaymentDetails.swift in Sources */,
+				48972D9C27F07B3C00E65328 /* LoadingOverlay.swift in Sources */,
+				48972D9E27F07B5700E65328 /* CCWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,34 +237,41 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Arunramya151;
 				SKIP_INSTALL = YES;
-
+				SWIFT_OBJC_BRIDGING_HEADER = "Arunramya151-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Arunramya151;
 				SKIP_INSTALL = YES;
-
+				SWIFT_OBJC_BRIDGING_HEADER = "Arunramya151-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
