@@ -34,7 +34,6 @@
 		48972D9B27F07B3C00E65328 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		48972D9D27F07B5700E65328 /* CCWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWebViewController.swift; sourceTree = "<group>"; };
 		48972D9F27F07BAE00E65328 /* RSAUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAUtils.swift; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* Arunramya151.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arunramya151.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Arunramya151.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arunramya151.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +64,6 @@
 				48972D9B27F07B3C00E65328 /* LoadingOverlay.swift */,
 				48972D9927F07B2900E65328 /* PaymentDetails.swift */,
 				48972D9727F07AD500E65328 /* Arunramya151.swift */,
-				B3E7B5881CC2AC0600A0062D /* Arunramya151.h */,
 				B3E7B5891CC2AC0600A0062D /* Arunramya151.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				48972D9627F07AD400E65328 /* Arunramya151-Bridging-Header.h */,
